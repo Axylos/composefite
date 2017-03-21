@@ -152,7 +152,7 @@ BOT_IDENTITY = {
 
     ## Slack mode (comment the others above if using this mode)
     ## PROD TOKEN
-    'token': 'xoxb-64759698260-2lXiC5LyRHuOmnFN248p9Nom',
+    'token': '',
 
     ## DEV TOKEN
     # 'token': 'xoxb-100826155511-N4f2GzJEFx9c4W1KB8P4gR5b',
