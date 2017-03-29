@@ -12,7 +12,7 @@ DB_NAME = "fitedb"
 class FiteClient(object):
     def __init__(self, is_test=False):
         self.client = MongoClient(
-            os.environ['DB_PORT_27017_TCP_ADDR'],
+            os.environ.get('DB_PORT_27017_TCP_ADDR') or 'localhost',
             27017
         )
         self.is_test = is_test

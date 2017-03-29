@@ -1,5 +1,5 @@
 import os
-#from errbot.backends.test import testbot
+from errbot.backends.test import testbot
 
 """
 class TestErrFite(object):
@@ -21,3 +21,10 @@ class TestErrFite(object):
         testbot.push_message('!get fites')
         assert not "No fites found!" in testbot.pop_message()
 """
+
+class TestErrFite(object):
+    def test_add_multistring_fite(self, testbot):
+        testbot.push_message("!new fitelist bar")
+        testbot.push_message("!add fite bar old new")
+        testbot.pop_message()
+        print(testbot.pop_message())
