@@ -3,4 +3,6 @@ __pycache__/
 *.pyc
 *.cpython-36.pyc
 *.db
-extra/err-fite/fitedb/__pycache__/
+*.cache/
+*/cache/
+extra/errfite/fitedb/__pycache__/
