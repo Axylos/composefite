@@ -1,5 +1,5 @@
 import pytest
-from fitedb.fite_client import FiteClient
+from errfite.fitedb.fite_client import FiteClient
 
 class TestFiteClient():
     @classmethod

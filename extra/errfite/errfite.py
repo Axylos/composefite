@@ -40,13 +40,16 @@ class ErrFite(BotPlugin):
             else:
                 return fitelist.dump()
 
-    @arg_botcmd('right_fite', type=str)
-    @arg_botcmd('left_fite', type=str)
-    @arg_botcmd('list_name', type=str)
-    def add_fite(self, msg, list_name=None, left_fite=None, right_fite=None):
-        print("hey wat")
-        print(list_name, left_fite, right_fite)
+
+    @botcmd(split_args_with='|')
+    def add_fite(self, msg, args):
+
+        list_name, left_fite, right_fite = list(map(lambda string: string.strip(), args))
         return client.add_fite(list_name, (left_fite, right_fite))
+
+    @botcmd
+    def foobar(self, msg, args):
+        return "fuck you"
 
     @botcmd
     def current_fite(self, msg, args):

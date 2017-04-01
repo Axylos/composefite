@@ -1,6 +1,6 @@
 [Core]
 Name = ErrFite
-Module = err-fite
+Module = errfite
 
 [Documentation]
 Description = a polling chatbot for conceptual warfare
